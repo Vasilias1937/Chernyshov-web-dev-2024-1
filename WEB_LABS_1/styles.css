@@ -1,33 +1,33 @@
 
-*{
-    margin-top: 0px;
+* {
+    margin: 0px;
 }
 
-div{
+div {
     box-sizing: border-box;
 }
 
 header {
     text-align: center;
     background-color: brown;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-h1{
+h1 {
     color: #4CAF50; 
 }
 
-body{
+body {
     margin-top: 0px;
     background-color: #D3D3D3;
 }
 
-.text{
+.text {
     font-size: 22px;
     font-family: Montserrat;
 }
 
-.link{
+.link {
     color: grey;
     font-size: 24px;
     margin: 10px;
@@ -35,9 +35,9 @@ body{
 
 }
 
-a:hover{
+a:hover {
     color:#4CAF50;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 img{
@@ -69,7 +69,7 @@ th, td {
     transition: background-color 0.3s ease;  
 }  
 
-footer{
+footer {
     text-align: center; 
     background-color: #d3d3d6;
     font-family: 'Arial', sans-serif; 
@@ -78,10 +78,10 @@ footer{
     padding-bottom: 5px;
 }
 
-.mail{
+.mail {
     color:rebeccapurple;
 }
 
-.mail:hover{
+.mail:hover {
     color:#4CAF50;
 }
