@@ -1,16 +1,15 @@
 
 * {
     margin: 0px;
+    font-family: Montserrat;
 }
 
-div {
-    box-sizing: border-box;
-}
 
 header {
     text-align: center;
     background-color: brown;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -24,7 +23,6 @@ body {
 
 .text {
     font-size: 22px;
-    font-family: Montserrat;
 }
 
 .link {
@@ -40,9 +38,10 @@ a:hover {
     text-decoration: none;
 }
 
-img{
+.baseIMG {
     width: 500px;
 }
+
 table {  
     width: 100%;  
     border-collapse: collapse;  
@@ -74,8 +73,8 @@ footer {
     background-color: #d3d3d6;
     font-family: 'Arial', sans-serif; 
     color:black;
-    padding-top: 0;
     padding-bottom: 5px;
+    margin-top: 15px;
 }
 
 .mail {
