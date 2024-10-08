@@ -86,7 +86,7 @@ footer {
     color:#4CAF50;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .main-header {
         text-align: center;
     }
@@ -108,9 +108,9 @@ footer {
     .last {
         margin: 0;
     }
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .main-header {
         text-align: center;
     }
@@ -136,4 +136,4 @@ footer {
     th {
         font-size: smaller;
     }
-}
+} */

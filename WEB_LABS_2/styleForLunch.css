@@ -1,0 +1,161 @@
+.menuSection>.menuType {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+header {
+    width: 100%;
+}
+
+.menuElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: rgb(141, 32, 32);
+    border-radius: 35px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.menuElement:hover {
+    border: 2px solid tomato;
+}
+
+.eatHeader {
+    margin-right: 5%;
+    margin-left: 5%;
+    color:brown;    
+}
+
+.price {
+    font-size: larger;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.name {
+    font-size: larger; 
+    flex: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.weight {
+    color:gainsboro;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.menuPicture {
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+} 
+
+button {
+    color: rgb(0, 0, 0);
+    background-color: #ccfff0;
+    border-radius: 10px;
+    width: 100%;   
+    height: auto;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+button:hover {  
+    background-color: #45a049;
+    transform: scale(1.05); 
+}  
+
+button:active {  
+    background-color: #3e8e41;
+}  
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list a.active {
+    color: tomato;
+}
+
+
+@media (max-width: 800px) {
+
+    .hCont {
+        display: flex;
+        width: 100%;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .nav-list {
+        display: flex;              
+        justify-content: center;    
+        align-items: center;         
+        width: 100%;  
+        flex-wrap: nowrap;
+    }
+
+    .nav-list>.link {
+        font-size: larger;
+    }
+
+    .eatHeader {
+        text-align: center;
+    }
+
+    .menuSection>.menuType {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:repeat(1,1fr) ;
+    }
+}
+
+@media (max-width: 600px) {
+    .hCont {
+        display: flex;
+        width: 100%;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .nav-list {
+        display: flex;              
+        justify-content: center;    
+        align-items: center;         
+        width: 100%; 
+        flex-direction: column;
+    }
+
+    .nav-list>.link {
+        font-size: larger;
+    }
+
+    .eatHeader {
+        text-align: center;
+    }
+
+    .menuSection>.menuType {
+        grid-template-columns: 1fr;
+    }
+}
