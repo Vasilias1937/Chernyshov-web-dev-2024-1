@@ -95,6 +95,155 @@ button:active {
     color: tomato;
 }
 
+.contForOrder {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+.contForOrderHeader {
+    text-align: center;
+}
+
+.twoParts {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 1fr;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.order {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#make-order {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.block {
+    width: 45%;
+}
+
+.block>label {
+    margin-top: 10px;
+}
+
+.block>input {
+    margin-top: 5px;
+    width: 70%;
+}
+
+.block>select {
+    margin-top: 5px;
+    width: 70%;
+}
+
+.block>textarea {
+
+    width: 70%;
+}
+
+#aaa {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+}
+
+select,
+input,
+textarea {
+
+    padding: 10px;
+    border: 1px solid rgb(46, 45, 45);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+fieldset>input {
+    margin-top: 5px;
+    width: 70%;
+}
+
+legend {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check-box-label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+small {
+    margin-top: 5px;
+    display: block;
+}
 
 @media (max-width: 800px) {
 
