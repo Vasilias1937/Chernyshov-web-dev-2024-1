@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styleForLunch.css">
+    <link rel="stylesheet" type="text/css" href="styleForOrder.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take your lunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hCont">
+        <h1 class="main-header">Food Construct</h1>
+        <nav class="nav-list">
+            <a href="web.html" class="link first aboutUs">О нас</a>
+            <a href="lanch.html" class="link active">Собрать ланч</a>
+            <a href="#make-order" class="link">Заказы</a>
+            <a href="#contacts" class="link last">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menuSection">
+            <h2 class="eatHeader">Супы</h2>
+            <div class="menuType menuSection1"></div>
+        </section>
+
+        <section class="menuSection">
+            <h2 class="eatHeader">Главные блюда</h2>
+            <div class="menuType menuSection2"></div>
+        </section>
+
+        <section class="menuSection">
+            <h2 class="eatHeader">Напитки</h2>
+            <div class="menuType menuSection3"></div>
+        </section>
+    </main>
+
+    <section class="order">
+        <form action="https://httpbin.org/post" method="POST" id="make-order">
+            <div class="gridOrder">
+                <h3 class="orderH2">Ваш заказ:</h3>
+                <div class="block1 block">
+                    <h2>Ничего не выбрано.</h2>
+                    <p>Итоговая стоимость:  0₽</p>
+                    <!-- <label for="soup">Выберите суп:</label>
+                    <select id="soup" name="soup" required>
+                        <option value="" class="">-- Выберите суп --</option>
+                        <option value="mushroom">Грибной суп-пюре</option>
+                        <option value="gaspacho">Гаспачо</option>
+                        <option value="norwegian">Норвежский суп</option>
+                    </select>
+
+                    <label for="main">Выберите главное блюдо:</label>
+                    <select id="main" name="main" required>
+                        <option value="" class="">-- Выберите блюдо --</option>
+                        <option value="lasagna">Лазанья</option>
+                        <option value="fried">Жаренная картошка с грибами</option>
+                        <option value="chiken">Котлеты из курицы</option>
+                    </select>
+
+                    <label for="drink">Выберите напиток:</label>
+                    <select id="drink" name="drink" required>
+                        <option value="" class="">-- Выберите напиток --</option>
+                        <option value="orange">Апельсиновый сок</option>
+                        <option value="apple">Яблочный сок</option>
+                        <option value="carrot">Морковный сок</option>
+                    </select> -->
+
+                    <label for="comments">Комментарии к заказу</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <div class="block2 block">
+                    <h3>Данные для доставки:</h3>
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <div class="check-box-label">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Получать информацию о скидках и акциях</label>
+                    </div>
+
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="address">Адрес доставки</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <fieldset>
+                        <legend>Время доставки</legend>
+
+                        <div class="radio-label">
+                            <input type="radio" name="delivery_time" id="delivery_time1" value="asap" required>
+                            <label for="delivery_time1">Как можно скорее</label>
+                        </div>
+
+                        <div class="radio-label">
+                            <input type="radio" name="delivery_time" id="delivery_time2" value="specific" required>
+                            <label for="delivery_time2">К указанному времени</label>
+                        </div>
+
+                        <label for="delivery-specific-time">Укажите время доставки</label>
+                        <input type="time" id="delivery-specific-time" name="delivery-specific-time" min="07:00" max="23:00" step="300">
+                        <small>Доступное время доставки с 7:00 до 23:00</small>
+                    </fieldset>
+
+                    <div class="buttons">
+                        <button type="reset">Сбросить</button>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p id="contacts">Позвонить нам <b>+7-000-000-00-00</b></p>
+        <p>Служба поддержки</p>
+        <a class="mail">somemail@some.ru</a>
+    </footer>
+
+    <script src="array.js"></script>
+    <script src="display.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>

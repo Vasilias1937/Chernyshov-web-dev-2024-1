@@ -22,7 +22,7 @@
             </nav>
         </header>
         <main>
-            <section class="menuSection">
+            <section class="menuSection"> <!--Супы медиа запросы на изменение кол-ва колонок -->
                 <h2 class="eatHeader">Супы</h2>
                 <div class="menuType">
                     <div class="menuElement">
@@ -119,14 +119,15 @@
             </section>
 
         </main>
+
         <section class="order">
-            <h2>Сделать заказ</h2>
             <form action="https://httpbin.org/post" method="POST" id="make-order">
                 <div class="gridOrder">
+                    <h3 class="orderH2">Ваш заказ:</h3>
                     <!-- Блок с заказом клиента -->
-                    <div class="block">
-                        <h3 class="orderH2">Ваш заказ:</h3>
-                            <label for="soup">Выберите суп:</label>  
+                    <div class="block1 block">
+                            <h2>Ничего не выбрано.</h2>
+                            <!-- <label for="soup">Выберите суп:</label>  
                             <select id="soup" name="soup" required>
                                 <option value="" class="">
                                     -- Выберите суп --
@@ -142,8 +143,8 @@
                                 </option>
                             </select>
 
-                            <label for="main">Выберите главное блюдо:</label>  
-                            <select id="main" name="main" required>
+                            <label for="soup">Выберите главное блюдо:</label>  
+                            <select id="soup" name="soup" required>
                                 <option value="" class="">
                                     -- Выберите блюдо --
                                 </option>
@@ -158,8 +159,8 @@
                                 </option>
                             </select>
 
-                            <label for="drink">Выберите напиток:</label>  
-                            <select id="drink" name="drink" required>
+                            <label for="soup">Выберите напиток:</label>  
+                            <select id="soup" name="soup" required>
                                 <option value="" class="">
                                     -- Выберите напиток --
                                 </option>
@@ -175,11 +176,11 @@
                             </select>
 
                             <label for="comments">Комментарии к заказу</label>
-                            <textarea id="comments" name="comments"></textarea>
+                            <textarea id="comments" name="comments"></textarea> -->
                     </div>
                     
                     <!-- Блок с данными клиента -->
-                    <div class="block">
+                    <div class="block2 block">
                         <h3>Данные для доставки:</h3>
                         <label for="name">Имя</label>
                         <input type="text" id="name" name="name" required>
@@ -204,13 +205,13 @@
                             <legend>Время доставки</legend>
 
                             <div class="radio-label">
-                                <label for="delivery_time1">Как можно скорее</label>
                                 <input type="radio" name="delivery_time" id="delivery_time1" value="asap" required>
+                                <label for="delivery_time1">Как можно скорее</label>
                             </div>
 
                             <div class="radio-label">
-                                <label for="delivery_time2">К указанному времени</label>
                                 <input type="radio" name="delivery_time" id="delivery_time2" value="specific" required>
+                                <label for="delivery_time2">К указанному времени</label>
                             </div>
 
 
@@ -226,7 +227,7 @@
                             <button type="reset">Сбросить</button>
                             <button type="submit">Отправить</button>
                         </div>
-                </div>
+                    </div>
             </form>
 
 
