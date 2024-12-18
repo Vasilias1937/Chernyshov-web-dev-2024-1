@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,19 +24,81 @@
     </header>
 
     <main>
-        <section class="menuSection">
+        <section class="menuSection" data-type="soup" data-container="menuSection1">
             <h2 class="eatHeader">Супы</h2>
+            <button class="sortButton" data-kind="fish">
+                Рыбный
+            </button>
+
+            <button class="sortButton" data-kind="meat">
+                Мясной
+            </button>
+
+            <button class="sortButton" data-kind="veg">
+                Веганский
+            </button>
             <div class="menuType menuSection1"></div>
         </section>
 
-        <section class="menuSection">
+        <section class="menuSection" data-type="main" data-container="menuSection2">
             <h2 class="eatHeader">Главные блюда</h2>
+            <button class="sortButton" data-kind="fish">
+                Рыбное
+            </button>
+
+            <button class="sortButton" data-kind="meat">
+                Мясное
+            </button>
+
+            <button class="sortButton" data-kind="veg">
+                Веганское
+            </button>
             <div class="menuType menuSection2"></div>
         </section>
 
-        <section class="menuSection">
+        <section class="menuSection" data-type="drink" data-container="menuSection3">
             <h2 class="eatHeader">Напитки</h2>
+            <button class="sortButton" data-kind="c">
+                Холодный
+            </button>
+
+            <button class="sortButton" data-kind="h">
+                Горячий
+            </button>
+
             <div class="menuType menuSection3"></div>
+        </section>
+
+        <section class="menuSection" data-type="saladOrStarter" data-container="menuSection4">
+            <h2 class="eatHeader">Салаты и стартеры</h2>
+            <button class="sortButton" data-kind="fish">
+                Рыбный
+            </button>
+
+            <button class="sortButton" data-kind="meat">
+                Мясной
+            </button>
+
+            <button class="sortButton" data-kind="veg">
+                Веганский
+            </button>
+            <div class="menuType menuSection4"></div>
+        </section>
+
+        <section class="menuSection" data-type="dessert" data-container="menuSection5">
+            <h2 class="eatHeader">Десерты</h2>
+            <button class="sortButton" data-kind="s">
+                Маленькая порция
+            </button>
+
+            <button class="sortButton" data-kind="m">
+                Средняя порция
+            </button >
+
+            <button class="sortButton" data-kind="l">
+                Большая порция
+            </button>
+            <div class="menuType menuSection5"></div>
         </section>
     </main>
 

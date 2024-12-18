@@ -15,6 +15,7 @@ function displayDishes(type, containerClass) {
         filteredDishes.forEach((item) => {  
             const dishCard = document.createElement('div');  
             dishCard.className = 'menuElement';  
+            dishCard.data = item.category;
 
             const img = document.createElement('img');  
             img.src = item.image;  
